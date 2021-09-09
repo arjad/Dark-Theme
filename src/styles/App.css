@@ -1,0 +1,41 @@
+:root {
+  --blue: rgb(26, 57, 87);
+  --white: rgb(245, 241, 241);
+}
+form{
+  width:auto;
+  height: auto;
+}
+
+body {
+  transition-duration: 1s;
+}
+body.light {
+  background-color: var(--white);
+  color: var(--blue);
+}
+body.dark {
+  background-color: var(--blue);
+  color: var(--white);
+}
+nav{  
+  background-image: linear-gradient(rgba(20, 19, 19,0.4), rgb(8, 8, 8,0.3));
+}
+.main{
+  height:300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main p {
+  width:60%;
+  text-align: center;
+}
+
+.imgdiv{
+  height:400px;
+  width:100%;
+  overflow: hidden;
+  border:1px solid black;
+}

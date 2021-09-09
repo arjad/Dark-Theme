@@ -1,0 +1,32 @@
+.div{
+  height: 45px;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.div button {
+  width: 48%;
+  height: 100%;
+  border-radius: 10px;
+  
+  background-color: white;
+  border:2px solid black;
+  color:black;
+  font-weight: bold;
+  /* margin-left: 10%; */
+  /* margin-right: 10%; */
+}
+.div button:focus {
+  
+  border:2px solid black;
+  cursor: pointer;
+}
+
+.div button.clicked {
+  font-weight: bold;
+
+  background-color: black;
+  color:white;
+  border:2px solid white;
+}
