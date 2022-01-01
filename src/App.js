@@ -4,9 +4,19 @@ import DarkMode from "./components/DarkMode";
 import Day from '../src/day.jpg';
 import Night from "../src/night.jpg";
 import Moon from '../src/moon.png'
-
+import Darkmode from 'darkmode-js';
 function App() 
 {
+  const options = {
+    time: '0.5s', // default: '0.3s'
+    backgroundColor: '#fff',  // default: '#fff'
+    buttonColorDark: '#100f2c',  // default: '#100f2c'
+    saveInCookies: false, // default: true,
+    label: '🌓', // default: ''
+  }
+    const darkmode = new Darkmode(options);
+    darkmode.showWidget();
+   
   return (
     <div>
     <div className="App">
